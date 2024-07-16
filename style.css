@@ -1,0 +1,127 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    background: radial-gradient(160.3% 78.68% at 16.98% 14.39%, #444444 45.19%, #313131 95.67%);
+    overflow-y: hidden;
+}
+.opacity-60 {
+    opacity: 60%;
+}
+.calculator {
+    background: transparent;
+    margin-inline: auto;
+    width: 330px;
+    height: 481px;
+    /* border: 1px solid #FFFFFF33; */
+    margin-top: 134px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.screen {
+    width: 100%;
+    height: 91px;
+    margin-bottom: 30px;
+}
+.input{
+    font-family: Roboto Mono;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 34.29px;
+    color: #FFFFFF;
+    opacity: 30%;
+}
+.output {
+    font-family: Roboto Mono;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 55.39px;
+    color: #FFFFFF;
+}
+.keyboard{
+    display: flex;
+    gap: 20px;
+}
+.number {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 210px;
+    height: 350px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.number button {
+    font-family: Roboto Mono;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.97px;
+    text-align: center;
+    
+}
+.pointer {
+    cursor: pointer;
+}
+.operator{
+    width: 70px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    opacity: 60%;
+}
+.operator button {
+    width: 60px;
+    height: 70px;
+    padding: 5px;
+    font-family: Roboto Mono;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 42.2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.operator .red-btn {
+    width: 60px;
+    height: 70px;
+    background-color: #CA3E47;
+    border-radius: 100px;
+    box-shadow: 0px 0px 17px 0px #CA3E474D,0px 4px 4px 0px #00000033;
+
+}
+.line-left {
+    position: absolute;
+    width: 230px;
+    border:1px solid #FFFFFF33;
+    left: 0;
+    top: 126.35px;
+}
+.line-right {
+    position: absolute;
+    width: 10px;
+    border:1px solid #FFFFFF33;
+    right: 15px;
+    top: 126.35px;
+}
+.rectangle{
+    position: absolute;
+    width: 69.88px;
+    height: 392px;
+    top: 89px;
+    right: 40.5px;
+    background-color: #313131;
+    border-radius: 100px;
+    z-index: -1;
+}

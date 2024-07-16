@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Calculator</title>
+    </head>
+    <body class="container">
+        <main class="main container">
+            <section class="calculator">
+                <div class="screen">
+                    <div class="content">
+                        <div id="input" class="input"></div>
+                        <div id="output" class="output"></div>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <div class="number">
+                        <button><span class="pointer opacity-60">C</span></button>
+                        <button><span class="pointer opacity-60">±</span></button>
+                        <button><span class="pointer opacity-60">%</span></button>
+                        <button><span class="pointer">7</span></button>
+                        <button><span class="pointer">8</span></button>
+                        <button><span class="pointer">9</span></button>
+                        <button><span class="pointer">4</span></button>
+                        <button><span class="pointer">5</span></button>
+                        <button><span class="pointer">6</span></button>
+                        <button><span class="pointer">1</span></button>
+                        <button><span class="pointer">2</span></button>
+                        <button><span class="pointer">3</span></button>
+                        <button><span class="pointer">.</span></button>
+                        <button><span class="pointer">0</span></button>
+                        <button><span class="pointer">00</span></button>
+                    </div>
+                    <div class="operator">
+                        <button><span class="pointer">÷</span></button>
+                        <button><span class="pointer">×</span></button>
+                        <button><span class="pointer">-</span></button>
+                        <button><span class="pointer">+</span></button>
+                        <button class="red-btn"><span class="pointer">=</span></button>
+                    </div>
+                </div>
+                <span class="rectangle"></span>
+                <span class="line-left"></span>
+                <span class="line-right"></span>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
