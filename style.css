@@ -1,9 +1,17 @@
+:root {
+    --white: #FFFFFF;
+    --req-bg-color: #313131;
+    --opacity-30: #FFFFFF33;
+    --red-btn: #CA3E47;
+    --red-btn-shadow: 0px 0px 17px 0px #CA3E474D,0px 4px 4px 0px #00000033;
+    --font-primary: 'Roboto Mono', sans-serif;
+}
 .container {
     width: 100%;
     height: 100vh;
 }
 body {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: var(--font-primary);
     background: radial-gradient(160.3% 78.68% at 16.98% 14.39%, #444444 45.19%, #313131 95.67%);
     overflow-y: hidden;
 }
@@ -28,19 +36,19 @@ body {
     margin-bottom: 30px;
 }
 .input{
-    font-family: Roboto Mono;
+    font-family: var(--font-primary);
     font-size: 26px;
     font-weight: 300;
     line-height: 34.29px;
-    color: #FFFFFF;
+    color: var(--white);
     opacity: 30%;
 }
 .output {
-    font-family: Roboto Mono;
+    font-family: var(--font-primary);
     font-size: 42px;
     font-weight: 400;
     line-height: 55.39px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .keyboard{
     display: flex;
@@ -57,11 +65,11 @@ body {
     padding-bottom: 5px;
 }
 .number button {
-    font-family: Roboto Mono;
+    font-family: var(--font-primary);
     background: transparent;
     border: none;
     outline: none;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 25px;
     font-weight: 400;
     line-height: 32.97px;
@@ -83,7 +91,7 @@ body {
     width: 60px;
     height: 70px;
     padding: 5px;
-    font-family: Roboto Mono;
+    font-family: var(--font-primary);
     background: transparent;
     border: none;
     outline: none;
@@ -91,27 +99,26 @@ body {
     font-weight: 100;
     line-height: 42.2px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .operator .red-btn {
     width: 60px;
     height: 70px;
-    background-color: #CA3E47;
+    background-color: var(--red-btn);
     border-radius: 100px;
-    box-shadow: 0px 0px 17px 0px #CA3E474D,0px 4px 4px 0px #00000033;
-
+    box-shadow: var(--red-btn-shadow);
 }
 .line-left {
     position: absolute;
     width: 230px;
-    border:1px solid #FFFFFF33;
+    border:1px solid var(--opacity-30);
     left: 0;
     top: 126.35px;
 }
 .line-right {
     position: absolute;
     width: 10px;
-    border:1px solid #FFFFFF33;
+    border:1px solid var(--opacity-30);
     right: 15px;
     top: 126.35px;
 }
@@ -121,7 +128,7 @@ body {
     height: 392px;
     top: 89px;
     right: 40.5px;
-    background-color: #313131;
+    background-color: var(--req-bg-color);
     border-radius: 100px;
     z-index: -1;
 }
